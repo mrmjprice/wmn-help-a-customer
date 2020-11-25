@@ -1,0 +1,24 @@
+{# Imports #}
+{% from "patterns/header-v2/_header-v2.njk" import wmndsHeaderV2 %}
+{% from "patterns/footer/_footer.njk" import wmndsFooter %}
+
+<!DOCTYPE html>
+<html lang="en" class="wmnds-html">
+  <!-- Head -->
+  {% include "_layout/_partials/_head.njk" %}
+
+  <body class="wmnds-body">
+    {# Header #}
+    {{ wmndsHeaderV2() }}
+
+    <main class="wmnds-container wmnds-container--main">
+      {% block body %} {% endblock body %}
+    </main>
+    
+    {# Footer #}
+    {{ wmndsFooter() }}
+
+    <!-- Scripts -->
+    {% include "_layout/_partials/_scripts.njk" %}
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{% extends "_layout/_sidebar-left.njk" %}
+{# Imports #}
+{% from "components/accordion/_accordion.njk" import wmndsAccordion %}
+
+{% block sidebar %}
+    <h2>This is the sidebar</h2>
+    <p>Sidebar content here</p>
+{% endblock sidebar %}
+
+{% block content %}
+    <h1>This is the example page</h1>
+    <br>
+    <a href="/">Back home</a>
+{% endblock content %}
