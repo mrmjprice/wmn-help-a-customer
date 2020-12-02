@@ -1,5 +1,5 @@
 {# Imports #}
-{% from "patterns/header-v2/_header-v2.njk" import wmndsHeaderV2 %}
+{% from "patterns/header/_header.njk" import wmndsHeader %}
 {% from "patterns/footer/_footer.njk" import wmndsFooter %}
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 
   <body class="wmnds-body">
     {# Header #}
-    {{ wmndsHeaderV2() }}
+    {% include "_layout/_partials/_header.njk" %}
 
     <main class="wmnds-container wmnds-container--main">
       {% block body %} {% endblock body %}
